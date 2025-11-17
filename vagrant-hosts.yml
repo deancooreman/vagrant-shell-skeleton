@@ -10,7 +10,18 @@
 # If you want to run an install script at creation time, ensure the directory
 # provisioning/ contains a script with the name of the VM, e.g. srv001.sh.
 ---
+- name: 'debian'
+  ip: '192.168.56.10'
+  box: 'bento/debian-12'
 
-- name: 'srv001'
-  ip: '192.168.56.9'
-  box: 'bento/almalinux-9'
+- name: 'ubuntu'
+  ip: '192.168.56.20'
+  box: 'bento/ubuntu-22.04'
+
+- name: 'fedora'
+  ip: '192.168.56.30'
+  box: 'bento/fedora-latest'
+
+- name: 'alma'
+  ip: '192.168.56.40'
+  box: 'bento/almalinux-10'
